@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./weather.css"
 import axios from "axios";
-import { logDOM } from "@testing-library/react";
+// import { logDOM } from "@testing-library/react";
 import img from "../Image/3842198.png"
-import img2 from "../Image/cloud-rain-weather-isolated-icon-vector-24625960.jpg"
+// import img2 from "../Image/cloud-rain-weather-isolated-icon-vector-24625960.jpg"
 
 
 const Weather = () => {
