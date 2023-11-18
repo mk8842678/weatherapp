@@ -16,16 +16,20 @@ const Weather = () => {
      console.log(locationdata);
      useEffect(() => {
           const fetchData = async () => {
-               try {
-                    let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=7ad027bb33e2810afeaf7a6c40ba355e`
-                    const apidata = await axios.get(urlApi)
-                    getdata(apidata.data)
-                    // console.log(apidata);
-                    // axios.get(urlApi).then((res) => {
-                    //      console.log(res);
-                    // })
-               } catch (error) {
-                    console.log(error);
+               if (cityname) {
+
+
+                    try {
+                         let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=7ad027bb33e2810afeaf7a6c40ba355e`
+                         const apidata = await axios.get(urlApi)
+                         getdata(apidata.data)
+                         // console.log(apidata);
+                         // axios.get(urlApi).then((res) => {
+                         //      console.log(res);
+                         // })
+                    } catch (error) {
+                         console.log(error);
+                    }
                }
           }
           fetchData();
