@@ -17,6 +17,8 @@
      background-repeat: no-repeat;
      background-size: cover;
      color: #fff;
+     /* height: 100%; */
+     position: fixed;
 
 }
 
@@ -165,6 +167,9 @@
 
      .weather-parent {
           padding: 0 10px;
+          margin: 0;
+          height: 100%;
+          position: fixed;
      }
 
      .weather.part1 .input {
