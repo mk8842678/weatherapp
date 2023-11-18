@@ -64,9 +64,9 @@
      top: 28px;
 }
 
-.input {
+.part1 .input {
      /* margin: 15px 28px; */
-     padding: 15px 15px;
+     padding: 14px 0px;
      display: flex;
 }
 
@@ -170,10 +170,11 @@
           margin: 0;
           height: 100%;
           position: fixed;
+          width: 100%;
      }
 
-     .weather.part1 .input {
-          padding: 15px 15px;
+     .part1 .input {
+          padding: 14px 0px;
           display: flex;
      }
 
