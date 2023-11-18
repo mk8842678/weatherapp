@@ -13,24 +13,24 @@ const Weather = () => {
      const [locationdata, getlocationdata] = useState()
      console.log(storedata);
      console.log(currentData);
-     // console.log(locationdata);
-     // useEffect(() => {
-     //      const fetchData = async () => {
-     //           try {
-     //                let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=7ad027bb33e2810afeaf7a6c40ba355e`
-     //                const apidata = await axios.get(urlApi)
-     //                getdata(apidata.data)
-     //                // console.log(apidata);
-     //                // axios.get(urlApi).then((res) => {
-     //                //      console.log(res);
-     //                // })
-     //           } catch (error) {
-     //                console.log(error);
-     //           }
-     //      }
-     //      fetchData();
-     // }, [])
-     // console.log(storedata);
+     console.log(locationdata);
+     useEffect(() => {
+          const fetchData = async () => {
+               try {
+                    let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=7ad027bb33e2810afeaf7a6c40ba355e`
+                    const apidata = await axios.get(urlApi)
+                    getdata(apidata.data)
+                    // console.log(apidata);
+                    // axios.get(urlApi).then((res) => {
+                    //      console.log(res);
+                    // })
+               } catch (error) {
+                    console.log(error);
+               }
+          }
+          fetchData();
+     }, [])
+     console.log(storedata);
 
      useEffect(() => {
 
